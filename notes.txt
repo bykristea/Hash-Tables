@@ -1,0 +1,49 @@
+Object / Hash Map / Dict
+
+Arrays[] & HashFunctions : f()
+
+Arrays
+-How are they stored in Memory? 
+    + in sequence, contiguous.
+    + The memory that the operating system gives you is all in a line.
+    + memory address plus the number of bits. 
+    5000    5004    5008    5012    5016
+     1        2       3       4       5
+    my_arr[0]   my_arr[1]   my_arr[2]   my_arr[3]   my_arr[4]
+
+    bits are just 1 or 0
+    8 bits = 1 byte
+    bit = Binary unit
+
+    Increase the size of the array by 1 more slot
+        + move array and add one slot. copy over array one at a time. O(n)
+        + insert between 1 and 2
+            - shift over 2 and on one of a time copy and overwrite. O(n)
+
+HashFunctions -----
+-give hash function a key. Hash function takes in the key and returns an index in the array that we store the key and value together
+-to get back our key and and value. Hash functions take in key, creates the index and give us back the value. 
+
+--can not have a random hash function. 
+--must be Deterministic
+
+
+Built in ones examples
+- djb2
+- sha256
+- bcrypt
+- 
+
+
++ Hash scramble. Salt is number some prime number. 
+
++ Hash Function produces a Hash. 
+
++ Using a Hash Function in a Hash Table you want it to be fast.
+
++ Why would you want a Hash Function to be slow: 
+    --when using it to encrypt passwords/ user info so that it takes longer for hackers
+    -- to secure information
+
+
+
