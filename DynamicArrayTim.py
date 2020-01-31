@@ -10,8 +10,6 @@ class DynamicArray:
     def append(self, value):
         if self.count == self.size:
             self.resize()
-
-    ​
     self.storage[self.count] = value
     self.count += 1
     ​
